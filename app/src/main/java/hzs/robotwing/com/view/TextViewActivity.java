@@ -12,6 +12,13 @@ import hzs.robotwing.com.R;
 /**
  * @author hzs
  * date: 2019/4/12
+ * TextView
+ *
+ * CheckedTextView
+ *
+ *
+ *
+ *
  */
 public class TextViewActivity extends Activity {
 

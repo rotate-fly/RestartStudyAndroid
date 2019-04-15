@@ -23,6 +23,7 @@
         <activity android:name=".view.TextViewActivity"/>
         <activity android:name=".view.ButtonActivity"/>
         <activity android:name=".view.InputViewActivity"/>
+        <activity android:name=".view.ClockActivity"/>
 
     </application>
 

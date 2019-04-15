@@ -15,6 +15,10 @@ import hzs.robotwing.com.R;
 
 /**
  * @author hzs
+ * <p>
+ * AutoCompleteTextView
+ * <p>
+ * ExtractEditText
  */
 public class InputViewActivity extends AppCompatActivity {
 
@@ -32,7 +36,6 @@ public class InputViewActivity extends AppCompatActivity {
     }
 
 
-
     private void initView() {
         et0 = (EditText) findViewById(R.id.et_0);
         et1 = (EditText) findViewById(R.id.et_1);
@@ -46,7 +49,7 @@ public class InputViewActivity extends AppCompatActivity {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 //可通过actionId 判断是  android:imeOptions="actionNext" 属性设置的值
                 //输入法中action按钮点击事件
-                Log.d("edittext","onEditorAction");
+                Log.d("edittext", "onEditorAction");
                 return false;
             }
         });
@@ -54,35 +57,35 @@ public class InputViewActivity extends AppCompatActivity {
         et0.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                Log.d("edittext","onFocusChange");
+                Log.d("edittext", "onFocusChange");
             }
         });
         et0.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
-                Log.d("edittext","OnKeyListener");
+                Log.d("edittext", "OnKeyListener");
                 return false;
             }
         });
         et0.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                Log.d("edittext","beforeTextChanged");
+                Log.d("edittext", "beforeTextChanged");
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                Log.d("edittext","onTextChanged");
+                Log.d("edittext", "onTextChanged");
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-                Log.d("edittext","afterTextChanged");
+                Log.d("edittext", "afterTextChanged");
             }
         });
     }
 
-    private void showToast(String str){
-        Toast.makeText(this,str,Toast.LENGTH_SHORT).show();
+    private void showToast(String str) {
+        Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
     }
 }
