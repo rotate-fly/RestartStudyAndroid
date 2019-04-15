@@ -8,4 +8,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="NormalTextView">
+        <item name="android:layout_width">@dimen/dp_200</item>
+        <item name="android:layout_height">@dimen/dp_48</item>
+        <item name="android:layout_margin">@dimen/dp_5</item>
+        <item name="android:background">@drawable/bg_normal_textview</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
 </resources>
