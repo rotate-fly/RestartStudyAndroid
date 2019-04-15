@@ -1,4 +1,4 @@
-package fly.rotate.com.restartstudyandroid.common;
+package hzs.robotwing.com.common;
 
 import android.app.Activity;
 

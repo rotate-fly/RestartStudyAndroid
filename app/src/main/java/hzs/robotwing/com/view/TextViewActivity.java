@@ -1,4 +1,4 @@
-package fly.rotate.com.restartstudyandroid.view;
+package hzs.robotwing.com.view;
 
 import android.app.Activity;
 import android.graphics.Paint;
@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.text.Html;
 import android.text.TextUtils;
 import android.widget.TextView;
-import fly.rotate.com.restartstudyandroid.R;
+import hzs.robotwing.com.R;
 
 /**
  * @author hzs
@@ -62,7 +62,7 @@ public class TextViewActivity extends Activity {
 
         /**
          * 当只写了txt1-txt5时，如果只让txt4获取焦点
-         * 即在xnl中加上
+         * 即在xml中加上
          *             android:focusable="true"
          *             android:focusableInTouchMode="true"
          *          txt4滚动

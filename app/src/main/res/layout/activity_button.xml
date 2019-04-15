@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <Button
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:text="Button"/>
+
+        <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg_normal"
+                android:padding="15dp">
+
+            <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton系统默认样式"/>
+
+            <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:text="去除RadioButton系统默认样式"/>
+
+            <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/bg_radio_button"
+                    android:drawablePadding="10dp"
+                    android:text="设置RadioButton左边样式"/>
+
+        </RadioGroup>
+
+        <CheckBox
+                android:id="@+id/checkbox0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/bg_radio_button"
+                android:drawablePadding="10dp"
+                android:text="设置CheckBox左边样式和字体颜色"
+                android:textColor="@drawable/textcolor_checkbox"/>
+
+        <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox系统默认样式"
+                android:textColor="@color/black"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <ToggleButton
+                    android:id="@+id/toggle_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textOff="纵向排列"
+                    android:textOn="横向排列"/>
+
+            <ToggleButton
+                    android:id="@+id/toggle_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_radio_button"
+                    android:checked="false"
+                    android:textOff="OFF"
+                    android:textOn="ON"/>
+
+            <ToggleButton
+                    android:id="@+id/toggle_btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_radio_button"
+                    android:checked="false"
+                    android:textOff="@null"
+                    android:textOn="@null"/>
+        </LinearLayout>
+
+        <Switch
+                android:layout_margin="@dimen/dp_5"
+                android:id="@+id/switch_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textOff="纵向排列"
+                android:textOn="横向排列"/>
+
+        <Switch
+                android:layout_margin="@dimen/dp_5"
+                android:id="@+id/switch0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textOff="纵向排列"
+                android:textOn="横向排列"
+                android:thumb="@drawable/bg_red_circle"/>
+
+        <Switch
+                android:layout_margin="@dimen/dp_5"
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_normal"
+                android:checked="false"
+                android:track="@drawable/bg_switch_track"/>
+        <Switch
+                android:layout_margin="@dimen/dp_5"
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_normal"
+                android:checked="false"
+                android:thumb="@drawable/bg_switch_track"
+                android:track="@drawable/bg_radio_button"/>
+        <Switch
+                android:layout_margin="@dimen/dp_5"
+                android:id="@+id/switch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_normal"
+                android:checked="false"
+                android:showText="true"
+                android:textOff="纵向排列"
+                android:textOn="横向排列"
+                android:splitTrack="false"
+                android:track="@drawable/bg_switch_track"/>
+        <Switch
+                android:layout_margin="@dimen/dp_5"
+                android:id="@+id/switch4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_normal"
+                android:checked="false"
+                android:showText="true"
+                android:textOff="纵向排列"
+                android:textOn="横向排列"
+                android:splitTrack="true"
+                android:thumbTextPadding="@dimen/dp_3"
+                android:thumb="@drawable/bg_switch_track"
+                android:track="@drawable/bg_radio_button"/>
+
+    </LinearLayout>
+
+</ScrollView>
