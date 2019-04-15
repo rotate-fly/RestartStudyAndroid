@@ -103,6 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
+                android:textColor="@color/black"
                 android:textOff="纵向排列"
                 android:textOn="横向排列"/>
 
@@ -113,6 +114,7 @@
                 android:layout_height="wrap_content"
                 android:checked="true"
                 android:textOff="纵向排列"
+                android:textColor="@color/black"
                 android:textOn="横向排列"
                 android:thumb="@drawable/bg_red_circle"/>
 
@@ -123,6 +125,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_normal"
                 android:checked="false"
+                android:textColor="@color/black"
                 android:track="@drawable/bg_switch_track"/>
         <Switch
                 android:layout_margin="@dimen/dp_5"
@@ -131,6 +134,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_normal"
                 android:checked="false"
+                android:textColor="@color/black"
                 android:thumb="@drawable/bg_switch_track"
                 android:track="@drawable/bg_radio_button"/>
         <Switch
@@ -139,6 +143,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_normal"
+                android:textColor="@color/black"
                 android:checked="false"
                 android:showText="true"
                 android:textOff="纵向排列"
@@ -150,6 +155,7 @@
                 android:id="@+id/switch4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:background="@drawable/bg_normal"
                 android:checked="false"
                 android:showText="true"
