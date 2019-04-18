@@ -6,10 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
 import hzs.robotwing.com.common.BaseActivity;
-import hzs.robotwing.com.view.ButtonActivity;
-import hzs.robotwing.com.view.ClockActivity;
-import hzs.robotwing.com.view.InputViewActivity;
-import hzs.robotwing.com.view.TextViewActivity;
+import hzs.robotwing.com.view.*;
 
 /**
  * @author hzs
@@ -20,6 +17,7 @@ public class BaseViewMainActivity extends BaseActivity implements View.OnClickLi
     private TextView txtEditText;
     private TextView txtButton;
     private TextView txtClock;
+    private TextView txtPicker;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,11 +31,13 @@ public class BaseViewMainActivity extends BaseActivity implements View.OnClickLi
         txtEditText = (TextView) findViewById(R.id.txt_edit_text);
         txtButton = (TextView) findViewById(R.id.txt_button);
         txtClock = (TextView) findViewById(R.id.txt_clock);
+        txtPicker = (TextView) findViewById(R.id.txt_picker);
 
         textView.setOnClickListener(this);
         txtEditText.setOnClickListener(this);
         txtButton.setOnClickListener(this);
         txtClock.setOnClickListener(this);
+        txtPicker.setOnClickListener(this);
 
     }
 
@@ -55,6 +55,9 @@ public class BaseViewMainActivity extends BaseActivity implements View.OnClickLi
                 break;
             case R.id.txt_clock:
                 startActivity(new Intent(this, ClockActivity.class));
+                break;
+            case R.id.txt_picker:
+                startActivity(new Intent(this, PickerActivity.class));
                 break;
             default:
                 break;

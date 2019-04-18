@@ -30,6 +30,10 @@
                 android:id="@+id/txt_clock"
                 style="@style/NormalTextView"
                 android:text="Clock"/>
+        <TextView
+                android:id="@+id/txt_picker"
+                style="@style/NormalTextView"
+                android:text="Picker"/>
 
     </LinearLayout>
 </ScrollView>
